@@ -1,0 +1,15 @@
+*.gem
+*.swp
+*.tmproj
+*~
+.\#*
+.bundle
+.config
+.yardoc
+Gemfile.lock
+coverage
+doc/
+pkg
+rdoc
+tmp
+tmtags
