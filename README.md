@@ -71,7 +71,7 @@ If you set cache_enabled is turned off, nothing will be cached:
 great to be able to cover the entire API;
 - Error handling - there isn't error handling at the moment - something to
 consider when issues occur;
-- Test the endpoints already available.
+- Test caching logic.
 
 ## Contributing
 
