@@ -10,16 +10,15 @@ module WhenIWork
     end
 
     def request(method, path, params, cache_options)
-      if cache.nil?
-        connection.send(method, path, params).body
-      else
+      if cache_enabled
         key = cache_options.delete(:key) || cache_key_for(path, params)
         options = default_options.merge(cache_options)
 
-        cache.fetch(key, options) do
+        cache_store.fetch(key, options) do
           connection.send(method, path, params).body
         end
-
+      else
+        connection.send(method, path, params).body
       end
     end
 
@@ -36,7 +35,6 @@ module WhenIWork
       @connection ||= Faraday.new(:url => endpoint) do |faraday|
         faraday.request  :url_encoded
 
-        faraday.response :logger
         faraday.response :json, :content_type => /\bjson$/
         faraday.adapter  Faraday.default_adapter
       end
@@ -51,10 +49,10 @@ module WhenIWork
     end
 
     def token
-      if cache.nil?
+      if cache_enabled
         login['token']
       else
-        cache.fetch('wheniwork_token', default_options) do
+        cache_store.fetch('wheniwork_token', default_options) do
           login['token']
         end
       end
@@ -72,8 +70,12 @@ module WhenIWork
       connection.post('login', auth_params.to_json).body
     end
 
-    def cache
-      WhenIWork.configuration.cache
+    def cache_store
+      WhenIWork.configuration.cache_store
+    end
+
+    def cache_enabled
+      WhenIWork.configuration.cache_enabled
     end
   end
 end

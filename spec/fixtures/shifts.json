@@ -1,0 +1,185 @@
+{
+   "start":"Mon, 30 Apr 2012 00:00:00 -0500",
+   "end":"Fri, 04 May 2012 23:00:00 -0500",
+   "shifts":[
+      {
+         "id":973,
+         "account_id":3,
+         "user_id":135,
+         "location_id":137,
+         "position_id":0,
+         "site_id":0,
+         "start_time":"Tue, 01 May 2012 04:00:00 -0500",
+         "end_time":"Tue, 01 May 2012 11:00:00 -0500",
+         "break_time":0,
+         "color":"11a68d",
+         "notes":"",
+         "alerted":false,
+         "linked_users":null,
+         "shiftchain_key":"",
+         "published":true,
+         "published_date":"Wed, 25 Apr 2012 11:02:47 -0500",
+         "notified_at":"0000-00-00 00:00:00",
+         "created_at":"Tue, 24 Apr 2012 16:36:36 -0500",
+         "updated_at":"Wed, 25 Apr 2012 11:02:47 -0500",
+         "is_open":false,
+         "block_id":0
+      },
+      {
+         "id":974,
+         "account_id":3,
+         "user_id":135,
+         "location_id":137,
+         "position_id":0,
+         "site_id":0,
+         "start_time":"Wed, 02 May 2012 07:00:00 -0500",
+         "end_time":"Thu, 03 May 2012 04:00:00 -0500",
+         "break_time":0,
+         "color":"a4cc54",
+         "notes":"",
+         "alerted":false,
+         "linked_users":null,
+         "shiftchain_key":"",
+         "published":true,
+         "published_date":"Wed, 25 Apr 2012 11:02:47 -0500",
+         "notified_at":"0000-00-00 00:00:00",
+         "created_at":"Tue, 24 Apr 2012 16:36:38 -0500",
+         "updated_at":"Wed, 25 Apr 2012 11:02:47 -0500",
+         "is_open":false,
+         "block_id":0
+      },
+      {
+         "id":975,
+         "account_id":3,
+         "user_id":135,
+         "location_id":137,
+         "position_id":0,
+         "site_id":0,
+         "start_time":"Thu, 03 May 2012 20:00:00 -0500",
+         "end_time":"Fri, 04 May 2012 02:00:00 -0500",
+         "break_time":0,
+         "color":"7411a6",
+         "notes":"",
+         "alerted":false,
+         "linked_users":null,
+         "shiftchain_key":"",
+         "published":true,
+         "published_date":"Wed, 25 Apr 2012 11:02:47 -0500",
+         "notified_at":"0000-00-00 00:00:00",
+         "created_at":"Tue, 24 Apr 2012 16:36:40 -0500",
+         "updated_at":"Wed, 25 Apr 2012 11:02:47 -0500",
+         "is_open":false,
+         "block_id":0
+      },
+      {
+         "id":976,
+         "account_id":3,
+         "user_id":135,
+         "location_id":137,
+         "position_id":0,
+         "site_id":0,
+         "start_time":"Fri, 04 May 2012 07:00:00 -0500",
+         "end_time":"Sat, 05 May 2012 04:00:00 -0500",
+         "break_time":0,
+         "color":"a6d98d",
+         "notes":"",
+         "alerted":false,
+         "linked_users":null,
+         "shiftchain_key":"",
+         "published":true,
+         "published_date":"Wed, 25 Apr 2012 11:02:47 -0500",
+         "notified_at":"0000-00-00 00:00:00",
+         "created_at":"Tue, 24 Apr 2012 16:36:42 -0500",
+         "updated_at":"Wed, 25 Apr 2012 11:02:47 -0500",
+         "is_open":false,
+         "block_id":0
+      }
+   ],
+   "users":[
+      {
+         "id":135,
+         "account_id":3,
+         "timezone_id":0,
+         "country_id":233,
+         "role":1,
+         "email":"jcronk@thisclicks.com",
+         "first_name":"Jeff",
+         "last_name":"Cronk",
+         "phone_number":"+17152734444",
+         "phone_email":"",
+         "phone_prefix":"",
+         "password":true,
+         "activated":true,
+         "is_hidden":false,
+         "uuid":"0b442d557e14e86ed15b8f037ee53cb951015aff",
+         "notes":"",
+         "affiliate":0,
+         "is_private":true,
+         "infotips":"",
+         "hours_preferred":0,
+         "hours_max":25,
+         "hourly_rate":11,
+         "alert_settings":{
+            "timeoff":{
+               "sms":true,
+               "email":false
+            },
+            "swaps":{
+               "sms":false,
+               "email":true
+            },
+            "schedule":{
+               "sms":false,
+               "email":true
+            },
+            "reminders":{
+               "sms":false,
+               "email":true
+            },
+            "availability":{
+               "sms":false,
+               "email":true
+            },
+            "new_employee":{
+               "sms":false,
+               "email":true
+            }
+         },
+         "reminder_time":8,
+         "sleep_start":"21:00:00",
+         "sleep_end":"09:00:00",
+         "last_login":"Wed, 25 Apr 2012 03:58:56 -0500",
+         "notified_at":"Tue, 17 Apr 2012 16:47:25 -0500",
+         "created_at":"Wed, 21 Mar 2012 09:50:25 -0500",
+         "updated_at":"Wed, 25 Apr 2012 10:59:27 -0500",
+         "avatar":{
+            "url":"http://www.gravatar.com/avatar/868a17d2635f6795c80103052f542628.jpg?s=%s&d=identicon&r=pg",
+            "size":"%s"
+         },
+         "positions":[
+            30
+         ],
+         "locations":[
+            136,
+            137
+         ]
+      }
+   ],
+   "locations":[
+      {
+         "id":137,
+         "account_id":3,
+         "is_default":0,
+         "name":"Uptown",
+         "sort":0,
+         "max_hours":80,
+         "address":"4321 Your street, Your Town, MN 12345",
+         "coordinates":[
+            "45.8977016",
+            "-68.0365217"
+         ],
+         "created_at":"Tue, 24 Apr 2012 15:09:00 -0500",
+         "updated_at":"Tue, 24 Apr 2012 15:09:00 -0500"
+      }
+   ]
+}

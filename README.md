@@ -55,10 +55,15 @@ The gem uses active support caching to cache the requests for 1 minute. This
 is configurable through the configuration block:
 
     WhenIWork.configure do |c|
-      c.cache = Rails.cache
+      c.cache_store   = Rails.cache
+      c.cache_enabled = true
     end
 
-If you set cache to nil, nothing will be cached.
+If you set cache_enabled to false, nothing will be cached:
+
+    WhenIWork.configure do |c|
+      c.cache_enabled = false
+    end
 
 ## TODO
 
@@ -66,7 +71,7 @@ If you set cache to nil, nothing will be cached.
 great to be able to cover the entire API;
 - Error handling - there isn't error handling at the moment - something to
 consider when issues occur;
-- Test the endpoints already available.
+- Test caching logic.
 
 ## Contributing
 
