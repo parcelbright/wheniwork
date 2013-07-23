@@ -13,7 +13,7 @@ module WhenIWork
       if cache.nil?
         connection.send(method, path, params).body
       else
-        key = cache_key_for(path, params)
+        key = cache_options.delete(:key) || cache_key_for(path, params)
         options = default_options.merge(cache_options)
 
         cache.fetch(key, options) do
