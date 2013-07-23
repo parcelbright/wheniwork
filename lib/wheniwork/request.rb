@@ -51,7 +51,13 @@ module WhenIWork
     end
 
     def token
-      @token ||= login['token']
+      if cache.nil?
+        login['token']
+      else
+        cache.fetch('wheniwork_token', default_options) do
+          login['token']
+        end
+      end
     end
 
     def auth_params
