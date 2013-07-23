@@ -55,10 +55,15 @@ The gem uses active support caching to cache the requests for 1 minute. This
 is configurable through the configuration block:
 
     WhenIWork.configure do |c|
-      c.cache = Rails.cache
+      c.cache_store   = Rails.cache
+      c.cache_enabled = true
     end
 
-If you set cache to nil, nothing will be cached.
+If you set cache_enabled is turned off, nothing will be cached:
+
+    WhenIWork.configure do |c|
+      c.cache_enabled = false
+    end
 
 ## TODO
 

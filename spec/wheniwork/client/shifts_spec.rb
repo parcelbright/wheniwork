@@ -2,11 +2,13 @@ require 'spec_helper'
 
 describe WhenIWork::Client::Shifts do
   subject(:client) do
-    WhenIWork.configuration.cache = nil
+    WhenIWork.configuration.cache_enabled = false
     WhenIWork::Client.new
   end
 
-  before { client.stub(:token).and_return('abc123') }
+  before do
+    client.stub(:token).and_return('abc123')
+  end
 
   describe '#shifts' do
     context 'with available shifts' do
