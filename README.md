@@ -59,7 +59,7 @@ is configurable through the configuration block:
       c.cache_enabled = true
     end
 
-If you set cache_enabled is turned off, nothing will be cached:
+If you set cache_enabled to false, nothing will be cached:
 
     WhenIWork.configure do |c|
       c.cache_enabled = false
