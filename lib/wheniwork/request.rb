@@ -36,7 +36,6 @@ module WhenIWork
       @connection ||= Faraday.new(:url => endpoint) do |faraday|
         faraday.request  :url_encoded
 
-        faraday.response :logger
         faraday.response :json, :content_type => /\bjson$/
         faraday.adapter  Faraday.default_adapter
       end
