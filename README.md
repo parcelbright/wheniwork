@@ -75,10 +75,17 @@ consider when issues occur;
 
 ## Contributing
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+1. [Fork the repository.][fork]
+2. [Create a topic branch.][branch]
+3. Add specs for your unimplemented feature or bug fix.
+4. Run `bundle exec rake`. If your specs pass, return to step 3.
+5. Implement your feature or bug fix.
+6. Run `bundle exec rake`. If your specs fail, return to step 5.
+7. Add documentation for your feature or bug fix.
+8. Add, commit, and push your changes.
+9. [Submit a pull request.][pr]
 
+[fork]: http://help.github.com/fork-a-repo/
+[branch]: http://learn.github.com/p/branching.html
+[pr]: http://help.github.com/send-pull-requests/
 [wheniwork]: http://dev.wheniwork.com/
