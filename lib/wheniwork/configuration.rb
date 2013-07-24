@@ -1,6 +1,6 @@
 module WhenIWork
   class Configuration
-    attr_accessor :endpoint, :username, :password,
+    attr_accessor :endpoint, :username, :password, :expires_in,
       :api_key, :api_version, :protocol, :cache_store, :cache_enabled
 
     def initialize
@@ -13,6 +13,7 @@ module WhenIWork
       self.cache_enabled = true
       self.cache_store   = ActiveSupport::Cache::MemoryStore.new
       self.endpoint      = "#{protocol}://api.wheniwork.com/#{api_version}/"
+      self.expires_in    = 60
     end
 
   end
