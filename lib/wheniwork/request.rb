@@ -28,7 +28,7 @@ module WhenIWork
     end
 
     def default_options
-      { expires_in: 60 }
+      { expires_in: WhenIWork.configuration.expires_in }
     end
 
     def connection
