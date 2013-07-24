@@ -88,7 +88,7 @@ consider when issues occur;
 ## Copyright
 Copyright (c) 2013 Forward Labs. See [LICENSE][] for details.
 
-[license]: https://github.com/forward-labs/wheniwork/blob/master/LICENSE
+[license]: https://github.com/forward-labs/wheniwork/blob/master/LICENSE.txt
 [fork]: http://help.github.com/fork-a-repo/
 [branch]: http://learn.github.com/p/branching.html
 [pr]: http://help.github.com/send-pull-requests/
