@@ -50,11 +50,11 @@ module WhenIWork
 
     def token
       if cache_enabled
-        login['token']
-      else
         cache_store.fetch('wheniwork_token', default_options) do
           login['token']
         end
+      else
+        login['token']
       end
     end
 
