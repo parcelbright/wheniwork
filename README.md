@@ -1,6 +1,7 @@
 # Wheniwork
 
 [![Build Status](https://magnum.travis-ci.com/forward-labs/wheniwork.png?token=Z6AN21geTPF4HNYHvKwp&branch=master)](https://magnum.travis-ci.com/forward-labs/wheniwork)
+[![Code Climate](https://codeclimate.com/github/forward-labs/wheniwork.png)](https://codeclimate.com/github/forward-labs/wheniwork)
 
 This is a thin ruby wrapper around the [WhenIWork's][wheniwork] API.
 
