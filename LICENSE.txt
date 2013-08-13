@@ -1,4 +1,4 @@
-Copyright (c) 2013 Carlos Vilhena
+Copyright (c) 2013 Forward Labs
 
 MIT License
 
