@@ -1,6 +1,6 @@
 # Wheniwork
 
-[![Build Status](https://secure.travis-ci.org/forward-labs/wheniwork.png?branch=master)](http://travis-ci.org/forward-labs/wheniwork)
+[![Build Status](https://travis-ci.org/forward-labs/wheniwork.png?branch=master)](https://travis-ci.org/forward-labs/wheniwork)
 [![Code Climate](https://codeclimate.com/github/forward-labs/wheniwork.png)](https://codeclimate.com/github/forward-labs/wheniwork)
 [![Gem Version](https://badge.fury.io/rb/wheniwork.png)](http://badge.fury.io/rb/wheniwork)
 
